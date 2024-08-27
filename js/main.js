@@ -338,6 +338,42 @@ AOS.init({
     $("#youtubeIframe").attr("src", ""); // Clear the src attribute to stop the video
   });
 
+  $(document).ready(function () {
+    $("#contactForm").on("submit", function (event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      // Capture form data using jQuery
+      var name = $("#name").val();
+      var email = $("#email").val();
+      var subject = $("#subject").val()
+        ? $("#subject").val()
+        : "Get a quick quote?";
+      var message = $("#message").val();
+      var contact = $("#contact").val();
+
+      // Create the mailto link with the autofilled data
+      var mailtoLink =
+        "mailto:info@tripscribeuae.com" +
+        "?subject=" +
+        encodeURIComponent(subject) +
+        "&body=" +
+        encodeURIComponent(
+          "Name: " +
+            name +
+            "\n" +
+            "Email: " +
+            email +
+            "\n\n" +
+            "Message:\n" +
+            message,
+          "\n\n" + "Contact:\n" + contact
+        );
+
+      // Open the mailto link to autofill the email client
+      window.location.href = mailtoLink;
+    });
+  });
+
   $(".popup-youtube, .popup-vimeo, .popup-gmaps").magnificPopup({
     disableOn: 700,
     type: "iframe",

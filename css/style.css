@@ -13098,3 +13098,11 @@ textarea.form-control {
   font-size: 1.5rem; /* Adjust the font size as needed */
   text-align: center;
 }
+.expert-img{
+  background-size: cover;
+  background-position: center;
+  width: 100px; /* Adjust width as needed */
+  height: 300px; /* Adjust height as needed */
+  border-radius: 50%; /* Makes the image rounded */
+  margin-top: 50px;
+}
