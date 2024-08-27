@@ -13097,11 +13097,11 @@ textarea.form-control {
   font-size: 1.5rem; /* Adjust the font size as needed */
   text-align: center;
 }
-.expert-img{
+.expert-img {
   background-size: cover;
   background-position: center;
   width: 100px; /* Adjust width as needed */
-  height: 300px; /* Adjust height as needed */
+  height: 350px; /* Adjust height as needed */
   border-radius: 50%; /* Makes the image rounded */
   margin-top: 50px;
 }
@@ -13122,4 +13122,16 @@ textarea.form-control {
   align-items: center;
   padding: 10px;
   box-sizing: border-box;
+}
+/* Media query for mobile view */
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .expert-img {
+    width: 200px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+  }
 }
