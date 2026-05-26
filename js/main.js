@@ -392,8 +392,8 @@ AOS.init({
 })(jQuery);
 
 function navigateToWhatsapp() {
-  window.location.href = "http://wa.me/971507095075";
+  window.location.href = "http://wa.me/971556474231";
 }
 function navigateToCall() {
-  window.location.href = "tel:+971525201161";
+  window.location.href = "tel:+971 55 647 4231";
 }
